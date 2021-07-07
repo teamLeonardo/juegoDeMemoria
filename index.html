@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>juego de memoria</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="modal.js"></script>
+  </head>
+  <body>
+    <div class="contenedorGame" style="display: none;">
+      <div class="cabesera">
+        <div class="NumIntento"><span>♥</span><span>♥</span><span>♥</span></div>
+        <div class="puntajes">
+          <span>Puntos: 0 / 100</span>
+        </div>
+      </div>
+      <div class="cuerpo">
+        <div class="cont-selectores"></div>
+      </div>
+    </div>
+    <div class="modal-fondo">
+      <div class="modal"></div>
+    </div>
+    <script>
+      var modalsub = document.querySelector(".modal");
+      modalsub.innerHTML = window.modalContentJSON.Start.content;
+    </script>
+    <script src="menu.js"></script>
+    <script src="funct.js"></script>
+  </body>
+</html>
